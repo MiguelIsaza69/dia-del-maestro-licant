@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Día del Maestro · I.E. Liceo Antioqueño</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="preload" as="script" href="assets/palettes.js">
+  <link rel="preload" as="script" href="assets/composition.js">
+  <link rel="preload" as="script" href="assets/motifs.js">
+  <link rel="preload" as="script" href="assets/teachers.js">
+</head>
+<body class="gallery-page">
+  <header class="gallery-header">
+    <span class="eyebrow">I.E. Liceo Antioqueño · Bello</span>
+    <h1>Día del Maestro</h1>
+    <p class="subtitle">Una carta para cada uno · Selecciona para ver en grande</p>
+  </header>
+
+  <main id="grid" class="grid"></main>
+
+  <footer class="gallery-footer">
+    <span>Diseñado con cariño · 2026</span>
+  </footer>
+
+  <!-- GSAP asíncrono (no bloquea) -->
+  <script async src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+  <!-- Módulos en orden: tokens → composición → motivos → datos → render -->
+  <script src="assets/palettes.js"></script>
+  <script src="assets/composition.js"></script>
+  <script src="assets/motifs.js"></script>
+  <script src="assets/teachers.js"></script>
+  <script src="assets/gallery.js" defer></script>
+</body>
+</html>

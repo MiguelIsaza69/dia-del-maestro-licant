@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carta · Día del Maestro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="card-page fullscreen">
+  <!-- Lienzo a pantalla completa (difuminado) -->
+  <div class="card-stage-full">
+    <div id="card-art" class="card-art-full"></div>
+  </div>
+
+  <!-- UI superpuesta -->
+  <a class="back-link" href="index.html" aria-label="Volver">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Galería</span>
+  </a>
+
+  <div class="card-counter"><b id="cur">01</b> / <span id="total">28</span></div>
+
+  <nav class="card-nav">
+    <button id="prev" class="nav-btn" aria-label="Anterior">‹</button>
+    <button id="next" class="nav-btn" aria-label="Siguiente">›</button>
+  </nav>
+
+  <!-- Panel central con el mensaje -->
+  <div class="card-message-panel">
+    <div class="card-message-inner">
+      <div class="card-subject-tag" id="card-subject">Materia</div>
+      <h1 class="card-greeting">Feliz Día<br/>del Maestro</h1>
+      <div class="card-divider"></div>
+      <p class="card-poem-line" id="card-poem-special"></p>
+      <p class="card-poem-body" id="card-poem"></p>
+      <div class="card-divider-small"></div>
+      <div class="card-name">
+        <span class="card-name-eyebrow">Con admiración para</span>
+        <span id="card-name">Nombre</span>
+      </div>
+    </div>
+  </div>
+
+  <script async src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="assets/palettes.js"></script>
+  <script src="assets/composition.js"></script>
+  <script src="assets/motifs.js"></script>
+  <script src="assets/teachers.js"></script>
+  <script src="assets/card-view.js" defer></script>
+</body>
+</html>
